@@ -31,7 +31,7 @@ bool checkMainFunction(struct list *list) {
     }
 
     if (!result) {
-        SERROR("Função main não declarada\n");
+        SERROR("Main function not declared!\n");
     }
 
     return result;

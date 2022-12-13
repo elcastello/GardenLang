@@ -6,8 +6,8 @@
 
 extern int semanticErrors;
 
-#define SERROR(...) printf("[ERRO] " __VA_ARGS__); ++semanticErrors
-#define SWARNING(...) printf("[AVISO] " __VA_ARGS__)
+#define SERROR(...) printf("[ERROR] " __VA_ARGS__); ++semanticErrors
+#define SWARNING(...) printf("[WARNING] " __VA_ARGS__)
 
 struct list *findSymbolOrInsert(struct node_s *node);
 

@@ -354,7 +354,7 @@ enum node_type strToType(char *type) {
     else if (!strcmp(type, "set"))
         return NODE_SET;
     else {
-        printf("Tipo não identificado! [%s]\n", type);
+        printf("Data type not identified! Found: [%s]\n", type);
         return NODE_UNKNOWN;
     }
 }

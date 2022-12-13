@@ -16,7 +16,7 @@ int printTAC(FILE *fp, struct node_s *node, struct list *symbolTab){
     int rightTemp = -1;
 
     if(node->node_type == NODE_FUNC_DEF) {
-        tempCounter = 0; // novo contexto
+        tempCounter = 0; // new context scope
         fprintf(fp, "// função: %s\n", node->child[1]->nodeName);
         fprintf(fp, "%s:\n", node->child[1]->nodeName);
 
