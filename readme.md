@@ -68,7 +68,7 @@ println n
 ```
 
 The abstract tree syntax (by using the flag `--dotfile`) will be:
-?????
+![AST code example](https://github.com/elcastelar/GardenLang/blob/master/img-repo/example.png)
 
 The following code has numerous lexical, syntactic and semantic errors that must be found by the GardenLang compiler.
 
