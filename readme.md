@@ -2,23 +2,24 @@
 
 ## About
 
-This is a project for a compiler for a programming language developed in the Compilers course at University of
-Brasilia (UnB)
+This is a compiler for a programming language developed in the Compilers course at University of Brasilia (UnB)
 
-It is based on the C language, but with new operations and data types included (such as the set data type).
+It is based on the C language, but with new operations and data types (such as the `set` data type).
 
 The compiler **does not generate machine code**, but an intermediate language (Three Address Code). The virtual machine
-used to interpret the code was ![virtual machine three address code](https://github.com/lhsantos/tac)
+used to interpret the code can be found [here](https://github.com/lhsantos/tac)
 
 The project was composed by the stages of creation of the lexical, syntactic and semantic analyzer, respectively.
-The grammar of the programming language can be seen here???
+The grammar of the programming language can be seen [here](https://github.com/elcastelar/GardenLang/blob/master/grammar.y)
 
-Flex in version `2.6.4` was used to create the lexical analyzer and bison was used in version `3.7`.
+Flex version `2.6.4` was used to create the lexical analyzer and bison version `3.7` was also used.
 
 ## Instructions
 
-The compiler can either read from standard input or load a file.
-`$ ./gardenLang <file_name>`
+The compiler can either read from standard input or load from a file.
+```
+$ ./gardenLang <file_name>
+```
 
 It also accepts the paremeter `--dotfile` to generate a dotfile representing the abstract syntax tree.
 Graphviz can be used to visualize by executing the following command:
@@ -33,22 +34,20 @@ as `writeln()`.
 ```c
 int fib(int n){
 if (n <= 1){
-return n;
+    return n;
 }
 
     return fib(n - 1) + fib(n - 2);
-
 }
 
 int main(){
-int n;
-n = fib(10);
+    int n;
+    n = fib(10);
 
     writeln("The fib(10) is: ");
     writeln(n);
 
     return 0;
-
 }
 ```
 
